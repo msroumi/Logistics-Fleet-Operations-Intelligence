@@ -1,5 +1,10 @@
 # Logistics & Fleet Operations Intelligence Suite
 
+![Power BI](https://img.shields.io/badge/Power%20BI-Desktop-yellow)
+![DAX](https://img.shields.io/badge/DAX-Advanced-blue)
+![Power Query](https://img.shields.io/badge/Power%20Query-M-lightgrey)
+![Architecture](https://img.shields.io/badge/Model-Star%20Schema-green)
+
 ## Project Overview
 The **Logistics & Fleet Operations Intelligence Suite** is an end-to-end Power BI solution designed to optimize the *middle mile* for logistics providers.  
 It integrates **17 operational data streams** to deliver a unified view of **revenue, fuel, maintenance, and asset performance**, enabling data-driven decisions across fleet operations and commercial strategy.
@@ -106,4 +111,19 @@ README.md
 - **DAX**
 - **Star Schema Modeling**
 - **Synthetic, production-like datasets**
+
+---
+
+## About Me
+**Muntasir Abu Roumi**  
+Senior Analytics & Planning Professional | Power BI (PL-300) Certified  
+Specialized in Commercial Intelligence, Pricing Strategy, and Executive BI Solutions
+
+🔗 [Portfolio Website](https://sites.google.com/view/muntasir-analytics/home)  
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/muntasir-abu-roumi)
+
+---
+
+## License
+This project is shared for educational and portfolio purposes.
 
