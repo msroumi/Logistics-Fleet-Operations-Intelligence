@@ -1,34 +1,30 @@
 # Logistics & Fleet Operations Intelligence Suite
 
 ## Project Overview
-This 3-page interactive Business Intelligence suite was developed to solve a critical challenge in the logistics industry: **The disconnect between operational volume and bottom-line profitability.**
+This project is an end-to-end BI solution designed to optimize the "Middle Mile" for logistics firms. It integrates 17 data streams to provide a 360-degree view of operational costs vs. revenue, enabling data-driven decisions on asset retirement and customer contract negotiations.
 
-By integrating Trip, Fuel, Maintenance, and Customer data, this engine identifies "Profit Leaks" in routes, "Lemon" assets in the fleet, and high-risk customer contracts.
+## Technical Architecture
+* **Star Schema:** A complex model featuring 6 Fact tables and 11 Dimension tables for high-performance filtering.
+* **Portable M-Logic:** 100% parameter-driven folder paths, ensuring the report is environment-agnostic.
+* **Dynamic Benchmarking:** DAX measures that calculate fleet-wide averages to provide real-time performance context.
 
-## Technical Highlights
-* **Portable Architecture:** Built with parameter-driven Power Query (M) logic, allowing the report to run on any machine by simply updating the `Staging_Folder` path.
-* **Advanced Data Modeling:** Star Schema implementation linking multiple fact tables (Trips, Fuel, Maintenance) to shared dimensions (Trucks, Drivers, Routes).
-* **Strategic DAX:** Custom measures for RPM (Revenue Per Mile), CPM (Cost Per Mile), and dynamic fleet-wide MPG benchmarking.
-* **Executive UX:** Custom page navigation, invisible-overlay info buttons, and bookmark-based filter resets.
+## Measure Catalog
+### 01. Financial KPIs
+* **Net Profit / Margin %:** Bottom-line health tracking.
+* **Total Fuel & Maintenance Cost:** Granular expense auditing.
+* **Total Revenue:** Gross earnings from the `Fact_Loads` table.
 
-## Report Pages
+### 02. Operational Efficiency
+* **Fuel Efficiency (MPG):** Identifying underperforming assets.
+* **Cost/Revenue per Mile:** The primary metrics for quadrant analysis and route auditing.
 
-### 1. Executive Overview (Finance)
-Focused on Net Profit and Margin health. This page highlights geographical profitability by Origin/Destination to identify "Deadhead" routes and regional inefficiencies.
+### 03. Benchmarks
+* **Average Profit/Maintenance/Miles:** Fleet-wide standards used to highlight "Outlier" trucks and drivers.
 
-### 2. Strategic Insights (Sales & Customers)
-Features a **Customer Quadrant Analysis** (Scatter Chart) that segments clients into:
-* **Strategic Partners:** High Volume / High Profit.
-* **Operational Risk:** High Volume / Low Profit.
-
-### 3. Fleet Operations (Mechanical Health)
-Utilizes a **"Lemon Detector"** to correlate maintenance spend against mileage. It tracks fuel efficiency against an industry-standard **6.5 MPG benchmark**.
-
-## How to Use This Repo
-1.  **Download** the `.pbix` file and the `/Data` folder.
-2.  **Open** the report in Power BI Desktop.
-3.  **Update Path:** Go to `Transform Data` > `Edit Parameters` and paste your local folder path into the `Staging_Folder` parameter.
-4.  **Refresh:** Click 'Apply Changes' to see the data load instantly.
+## ⚙️ Setup
+1. Download the `Data` folder.
+2. Open the `.pbix` file.
+3. Update the `Staging_Folder` parameter in Power Query to point to your local data folder.
 
 ## Key Business Impact
 * **Asset Retirement:** Data-driven identification of high-cost/low-utilization trucks.
